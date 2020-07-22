@@ -1,18 +1,42 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<meta charset="utf-8">
-	<title>ATMosfer</title>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.css">
+    <style type="text/css">
+        body{ font: 14px sans-serif;  width: 200px;       
+        height: 50px;
+        position: absolute;
+        right: 50%; }
+     
+        .contenedor{ width: 350px; padding: 20px;  border: black 1px solid; margin: 0; }
+    </style>
+
 </head>
 <body>
-	<form name="login" action="login.php" method="POST">
-		<label for="id_user">Ingrese código de usuario:</label>
-		<input type="number" name="user" min="001" required="yes">
-		<p>
-		<label for="pwd_user">Ingrese su contraseña:</label>
-		<input type="password" name="pwd" required="yes">
-		<input type="submit" name="submit">
-	</form>
 
+<img src="img/ATM.png">
+
+
+    <div class="contenedor">
+        <h4 align="center">Inicio sesión.</h4>
+        <h3>Bienvenido a ATMosfer.</h3>
+        
+        <form action="login.php" method="post">
+        
+                <label>Usuario 🙎‍♂️</label>
+                <input type="text" name="usr" class="form-control" value="">
+            
+            <div>
+                <label>Contraseña 🔑</label>
+                <input type="password" name="pwd" class="form-control">
+            </div>
+            <div align="center" class="form-group">
+                <input type="submit" class="btn btn-primary" value="Ingresar">
+            </div>
+            <p>¿No tienes una cuenta? <a href="register.php">Regístrate ahora</a>.</p>
+        </form>
+    </div>    
 </body>
 </html>
